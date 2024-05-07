@@ -1,0 +1,150 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #140e78;
+}
+
+@media (min-width: 300px) {
+  .Header {
+    height: 80px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Header .HeaderPhoto img {
+    width: 105px;
+  }
+  .Header h1 {
+    font-size: 40px;
+    color: white;
+  }
+  .Header .HeaderMenu button {
+    width: 82px;
+    height: 80px;
+    background-color: #140e78;
+  }
+  .Your-level {
+    background-color: #140e78;
+    padding: 50px;
+    color: white;
+  }
+  .Your-level h1 {
+    justify-content: center;
+    display: flex;
+    font-size: 50px;
+  }
+  .Your-level .level-card {
+    margin: 10px;
+    border: 2px solid silver;
+    background-color: darkblue;
+    border-radius: 10px;
+    height: 100px;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+  }
+  .booksList {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .books {
+    display: ruby;
+    margin-top: 30px;
+    background-color: silver;
+  }
+  .books .book {
+    margin: 20px;
+    background-color: black;
+    color: white;
+    width: 300px;
+    font-size: 30px;
+  }
+  .books .book img {
+    width: 300px;
+  }
+  .books .book a {
+    color: white;
+  }
+  .books .book p {
+    margin: 0%;
+  }
+}
+@media (min-width: 615px) {
+  .Header {
+    height: 80px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Header .HeaderPhoto img {
+    width: 100px;
+  }
+  .Header h1 {
+    font-size: 59px;
+    color: white;
+  }
+  .Header .HeaderMenu button {
+    width: 100px;
+    height: 80px;
+    background-color: #140e78;
+  }
+  .Your-level {
+    background-color: #140e78;
+    padding: 50px;
+    color: white;
+  }
+  .Your-level h1 {
+    justify-content: center;
+    display: flex;
+    font-size: 50px;
+  }
+  .Your-level .level-card {
+    margin: 10px;
+    border: 2px solid silver;
+    background-color: darkblue;
+    border-radius: 10px;
+    height: 100px;
+    width: 31%;
+    color: white;
+    font-size: 40px;
+  }
+  .Your-level .levels {
+    display: flex;
+    justify-content: center;
+  }
+  .booksList {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .books {
+    margin: 0px;
+    display: ruby;
+    background-color: silver;
+    max-width: 76%;
+  }
+  .books .book {
+    margin: 20px;
+    color: white;
+    width: 250px;
+    font-size: 30px;
+  }
+  .books .book img {
+    width: 250px;
+  }
+  .books .book a {
+    color: white;
+  }
+  .books .book p {
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=EnglishSite.css.map */
