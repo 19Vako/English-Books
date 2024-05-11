@@ -41,9 +41,13 @@ body {
     background-color: darkblue;
     border-radius: 10px;
     height: 100px;
-    width: 100%;
+    width: 31%;
     color: white;
     font-size: 40px;
+  }
+  .Your-level .levels {
+    display: flex;
+    justify-content: center;
   }
   .booksList {
     margin-top: 20px;
