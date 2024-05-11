@@ -5,7 +5,7 @@ body{
 }
 
 @media (min-width: 300px) {
-    .Header{
+    /* .Header{
         height: 80px;
         width: 100%;
         background-color: red;
@@ -96,8 +96,6 @@ body{
         justify-content: center;
     }
     .BoxD{
-       
-        max-width: 76%;
         padding: 30px;
        
         .photo{
@@ -129,7 +127,149 @@ body{
             height: 50px;
         }
 
+    } */
+
+    .Header {
+        height: 80px;
+        width: 100%;
+        background-color: red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .HeaderPhoto {
+            img { 
+                width: 105px;
+            }
+        }
+    
+        h1 {
+            font-size: 40px;
+            color: white;
+        }
+    
+        .HeaderMenu {
+            button {
+                width: 82px;
+                height: 80px;
+                background-color: #140e78;
+            }
+        }
     }
+    
+    .Your-level {
+        background-color: #140e78;
+        padding: 50px;
+        color: white;
+    
+        h1 {
+            justify-content: center;
+            display: flex;
+            font-size: 50px;
+        }
+    
+        .level-card {
+            margin: 10px;
+            border: 2px solid silver;
+            background-color: red;
+            border-radius: 10px;
+            height: 60px;
+            width: 93%;
+            color: white; // змінив колір з білого на чорний
+            font-size: 40px;
+        }
+    
+        .booksList {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .books {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            background-color: silver;
+        }
+    
+        .book {
+            margin: 20px;
+            background-color: black;
+            color: white;
+            width: 300px;
+            font-size: 30px;
+        }
+    
+        .book img {
+            width: 300px;
+        }
+    
+        .book a {
+            color: white;
+        }
+    
+        .book p {
+            margin: 0;
+        }
+    }
+
+    .booksList{
+        background-color: silver;
+    }
+    
+    .Box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .book{
+        width: 250px;
+        margin: 15px;
+        img{
+            width: 100%;
+        }
+    }
+    
+    .BoxD {
+        padding: 30px;
+    }
+    
+    .photo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .NameBook {
+        display: flex;
+        justify-content: center;
+    
+        button {
+            width: 200px;
+            height: 50px;
+            color: black;
+            font-size: 20px;
+            background-color: #140e78;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            img {
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .authorBox {
+        display: flex;
+        align-items: center;
+    
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    
 }
 
 
@@ -231,9 +371,14 @@ body{
         max-width: 76%;
         padding: 30px;
         background-color: #140e78;
+
+        .photo{
+            display: block;
+        }
         
     }
     .NameBook{
+        display: block;
         button{
         width: 200px;
         height: 50px;
@@ -249,6 +394,7 @@ body{
             height: 20px;
             margin-right: 10px;
         }
+
     }
     }
     .Description{

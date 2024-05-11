@@ -5,6 +5,129 @@ body {
 }
 
 @media (min-width: 300px) {
+  /* .Header{
+      height: 80px;
+      width: 100%;
+      background-color: red;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+      .HeaderPhoto{
+          img{ 
+              width: 105px;
+          }
+      }
+
+      h1{
+          font-size: 40px;
+          color: white;
+      }
+
+      .HeaderMenu{
+          button{
+              width: 82px;
+              height: 80px;
+              background-color: #140e78;
+
+          }
+      }
+  }
+  .Your-level{
+      background-color: #140e78;
+      padding: 50px;
+      color: white;
+
+
+      .levels{
+      }
+      h1{
+          justify-content: center;
+          display: flex;
+          font-size: 50px;
+
+      }   
+      .level-card{
+
+          margin: 10px;
+          border: 2px solid  silver;
+          background-color: red;;
+          border-radius: 10px;
+          height: 60px;
+          width: 93%;
+          color: white;
+          font-size: 40px;
+      }
+
+  }
+  .booksList{
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+
+  }
+  .books {
+      display: ruby;
+      margin-top: 30px;
+      background-color: silver;
+
+      .book{
+          margin: 20px;
+          background-color: black;
+          color: white;
+          width: 300px;
+          font-size: 30px;
+
+          img{
+              width: 300px;
+          }
+          a{
+             color: white;
+          }
+          p{
+              margin: 0%;
+          }
+
+      }
+  }
+  .Box{
+      display: flex;
+      justify-content: center;
+  }
+  .BoxD{
+      padding: 30px;
+
+      .photo{
+          display: flex;
+          justify-content: center;
+      }
+  }
+  .NameBook{
+
+      display: flex;
+      justify-content: center;
+
+      img{
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+      }
+
+  }
+  .Description{
+
+  }
+  .authorBox{
+      display: flex;
+      align-items: center;
+
+      img{
+          width: 50px;
+          height: 50px;
+      }
+
+  } */
   .Header {
     height: 80px;
     width: 100%;
@@ -45,41 +168,51 @@ body {
     color: white;
     font-size: 40px;
   }
-  .booksList {
+  .Your-level .booksList {
     margin-top: 20px;
     display: flex;
     justify-content: center;
   }
-  .books {
-    display: ruby;
+  .Your-level .books {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 30px;
     background-color: silver;
   }
-  .books .book {
+  .Your-level .book {
     margin: 20px;
     background-color: black;
     color: white;
     width: 300px;
     font-size: 30px;
   }
-  .books .book img {
+  .Your-level .book img {
     width: 300px;
   }
-  .books .book a {
+  .Your-level .book a {
     color: white;
   }
-  .books .book p {
-    margin: 0%;
+  .Your-level .book p {
+    margin: 0;
+  }
+  .booksList {
+    background-color: silver;
   }
   .Box {
     display: flex;
     justify-content: center;
   }
+  .book {
+    width: 250px;
+    margin: 15px;
+  }
+  .book img {
+    width: 100%;
+  }
   .BoxD {
-    max-width: 76%;
     padding: 30px;
   }
-  .BoxD .photo {
+  .photo {
     display: flex;
     justify-content: center;
   }
@@ -87,7 +220,17 @@ body {
     display: flex;
     justify-content: center;
   }
-  .NameBook img {
+  .NameBook button {
+    width: 200px;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+    background-color: #140e78;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .NameBook button img {
     width: 20px;
     height: 20px;
     margin-right: 10px;
@@ -183,6 +326,12 @@ body {
     max-width: 76%;
     padding: 30px;
     background-color: #140e78;
+  }
+  .BoxD .photo {
+    display: block;
+  }
+  .NameBook {
+    display: block;
   }
   .NameBook button {
     width: 200px;
