@@ -36,7 +36,6 @@ function ChoiseLevel(link) {
                 Book.classList.add('book');
  
                 img.src = book.photo;
-                a.href;
                 a.addEventListener('click', () => {
         
                     console.log('A link clicked'); // Log a message to verify if the event listener is triggered

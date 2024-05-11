@@ -34,12 +34,14 @@ body{
             }
         }
     }
-    
     .Your-level{
         background-color: #140e78;
         padding: 50px;
         color: white;
+        
     
+        .levels{
+        }
         h1{
             justify-content: center;
             display: flex;
@@ -47,12 +49,13 @@ body{
             
         }   
         .level-card{
+            
             margin: 10px;
             border: 2px solid  silver;
-            background-color: darkblue;;
+            background-color: red;;
             border-radius: 10px;
-            height: 100px;
-            width: 100%;
+            height: 60px;
+            width: 93%;
             color: white;
             font-size: 40px;
         }
@@ -93,32 +96,29 @@ body{
         justify-content: center;
     }
     .BoxD{
-        display: flex;
+       
         max-width: 76%;
         padding: 30px;
-        background-color: #140e78;
-        
+       
+        .photo{
+            display: flex;
+            justify-content: center;
+        }
     }
     .NameBook{
-        button{
-        width: 200px;
-        height: 50px;
-        color: white;
-        font-size: 20px;
-        background-color: #140e78;
+        
         display: flex;
         justify-content: center;
-        align-items: center;
 
         img{
             width: 20px;
             height: 20px;
             margin-right: 10px;
         }
-    }
+        
     }
     .Description{
-        margin-left: 30px;
+       
     }
     .authorBox{
         display: flex;
@@ -179,7 +179,7 @@ body{
     .level-card{
         margin: 10px;
         border: 2px solid  silver;
-        background-color: darkblue;
+        background-color: red;
         border-radius: 10px;
         height: 100px;
         width: 31%;
