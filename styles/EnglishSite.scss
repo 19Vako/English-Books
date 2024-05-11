@@ -214,6 +214,8 @@ body{
     }
 
     .booksList{
+        display: flex;
+        justify-content: center;
         background-color: silver;
     }
     
@@ -335,6 +337,8 @@ body{
     margin-top: 20px;
     display: flex;
     justify-content: center;
+
+
    
     }
     .books {
