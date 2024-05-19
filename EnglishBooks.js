@@ -42,8 +42,6 @@ function ChoiseLevel(link) {
                     renderBook(book);
                 });
                 
-                
- 
                 a.appendChild(img);
                 Book.appendChild(a);
                 Books.appendChild(Book);
@@ -117,5 +115,35 @@ function ChoiseLevel(link) {
      BoxD.appendChild(description); // Append description to BoxD
  }
 
- 
- 
+   // Функция для удаления пустых строк
+   function removeEmptyLines(text) {
+    return text
+        .split('\n') // Разделяем текст на строки
+        .filter(line => line.trim() !== '') // Фильтруем пустые строки
+        .join('\n'); // Объединяем строки обратно
+}
+
+// Функция для загрузки содержимого текстового файла
+async function loadFileContent() {
+    try {
+        // Используем Fetch API для получения содержимого файла
+        const response = await fetch('https://raw.githubusercontent.com/19Vako/Json-Data/main/A1/Love_Story-Erich_Segal.txt');
+        // Проверяем, был ли запрос успешным
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        // Читаем текстовое содержимое файла
+        let content = await response.text();
+        // Удаляем пустые строки
+        content = removeEmptyLines(content);
+        // Находим элемент <pre> и вставляем в него содержимое файла
+        document.getElementById('fileContent').textContent = content;
+    } catch (error) {
+        // Обрабатываем ошибки
+        console.error('Ошибка при загрузке файла:', error);
+        document.getElementById('fileContent').textContent = 'Не удалось загрузить файл.';
+    }
+}
+
+// Вызываем функцию для загрузки содержимого файла при загрузке страницы
+loadFileContent();
